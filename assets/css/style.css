@@ -571,8 +571,8 @@ body {
         font-size: 0.7rem;
     }
 }
-/* 📲 iPhone SE to iPhone 14 Pro Max (345px - 475px) - 2 Column Layout */
-@media (min-width: 345px) and (max-width: 475px) {
+/* 📲 iPhone SE to iPhone 14 Pro Max (345px - 430px) - 2 Column Layout */
+@media (min-width: 345px) and (max-width: 430px) {
     .container {
         padding: 15px 5%;
     }
@@ -602,6 +602,40 @@ body {
     .skill-card p {
         font-size: 0.6rem; /* Smaller text */
         text-align: center; /* Keeps text aligned properly */
+    }
+}
+
+/* 📲 430px - 490px (Ensuring 2 Columns) */
+@media (min-width: 430px) and (max-width: 490px) {
+    .container {
+        padding: 20px 5%;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px; /* Keeps spacing minimal */
+    }
+
+    .col-md-3 {
+        flex: 1 1 48%; /* Ensures exactly 2 columns */
+        max-width: 48%;
+    }
+
+    .skill-card {
+        min-height: 80px; /* Balanced height */
+        padding: 6px;
+        border-radius: 6px; /* Slightly rounded corners */
+    }
+
+    .skill-card i {
+        font-size: 1rem; /* Optimized icon size */
+    }
+
+    .skill-card p {
+        font-size: 0.75rem; /* Keeps text readable */
+        text-align: center; /* Proper alignment */
     }
 }
 
