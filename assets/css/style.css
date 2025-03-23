@@ -571,8 +571,8 @@ body {
         font-size: 0.7rem;
     }
 }
-/* 📲 iPhone SE to iPhone 14 Pro Max (345px - 430px) - 2 Column Layout */
-@media (min-width: 345px) and (max-width: 430px) {
+/* 📲 iPhone SE to iPhone 14 Pro Max (345px - 475px) - 2 Column Layout */
+@media (min-width: 345px) and (max-width: 475px) {
     .container {
         padding: 15px 5%;
     }
