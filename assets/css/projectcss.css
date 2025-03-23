@@ -1,0 +1,251 @@
+/* 🌟 Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+/* 🔹 Project Sections */
+.project-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 5%;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+/* 🚀 Smart Surveillance System */
+#project1 {
+    background-color: #e3f2fd; /* Light Blue */
+}
+
+#project1 h2 {
+    color: #1565c0;
+}
+
+#project1 .btn {
+    background-color: #1565c0;
+}
+
+#project1 .btn:hover {
+    background-color: #0d47a1;
+}
+
+/* 🚦 Traffic Sign Detection */
+#project2 {
+    background-color: #fbe9e7; /* Light Coral */
+}
+
+#project2 h2 {
+    color: #d84315;
+}
+
+#project2 .btn {
+    background-color: #d84315;
+}
+
+#project2 .btn:hover {
+    background-color: #bf360c;
+}
+
+/* 🌍 Disaster Awareness System */
+#project3 {
+    background-color: #ede7f6; /* Light Purple */
+}
+
+#project3 h2 {
+    color: #5e35b1;
+}
+
+#project3 .btn {
+    background-color: #5e35b1;
+}
+
+#project3 .btn:hover {
+    background-color: #4527a0;
+}
+
+/* 🦁 Zoo Management System */
+#project4 {
+    background-color: #e8f5e9; /* Light Green */
+}
+
+#project4 h2 {
+    color: #2e7d32;
+}
+
+#project4 .btn {
+    background-color: #2e7d32;
+}
+
+#project4 .btn:hover {
+    background-color: #1b5e20;
+}
+
+/* 🔹 Project Container */
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+}
+
+/* 📌 Text Content */
+.project-content {
+    flex: 1;
+    text-align: left;
+}
+
+/* 🎠 Image Carousel */
+.project-slider {
+    flex: 1;
+    max-width: 600px; /* ✅ Increased width */
+}
+
+.project-slider img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* 🎨 Buttons & Links */
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.project-links .btn {
+    display: inline-block;
+    padding: 12px 22px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: white;
+    text-decoration: none;
+}
+
+.project-links .github {
+    font-size: 1.8rem;
+    color: #333;
+    transition: 0.3s;
+    vertical-align: middle;
+}
+
+.project-links .github:hover {
+    color: #007bff;
+}
+
+/* 🎠 Bootstrap Carousel Controls */
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%);
+}
+
+/* 🔥📱 Responsive Design */
+
+/* 💻 Large Screens (1920px and above) */
+@media screen and (min-width: 1920px) {
+    h2 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    .project-container {
+        max-width: 1500px;
+    }
+    .project-slider {
+        max-width: 750px; /* ✅ Wider images */
+    }
+    .project-slider img {
+        height: 450px;
+    }
+    .project-links .btn {
+        font-size: 1.4rem;
+        padding: 15px 30px;
+    }
+    .project-links .github {
+        font-size: 2.5rem;
+    }
+}
+
+/* 🖥️ Laptops (1366px - 1600px) */
+@media screen and (max-width: 1600px) {
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .project-slider {
+        max-width: 550px; /* ✅ Slightly wider */
+    }
+    .project-slider img {
+        height: 320px;
+    }
+}
+
+/* 📲 Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .project-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .project-slider {
+        max-width: 80%;
+    }
+    .project-slider img {
+        height: 280px;
+    }
+}
+
+/* 📱 Mobile Screens (Below 768px) */
+@media screen and (max-width: 768px) {
+    .project-section {
+        padding: 80px 5%;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    .project-slider {
+        max-width: 100%;
+    }
+    .project-slider img {
+        height: 250px;
+    }
+}
+
+/* 📱 Small Mobile Screens (Below 480px) */
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .project-slider img {
+        height: 220px;
+    }
+}

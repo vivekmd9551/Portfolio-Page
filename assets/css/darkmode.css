@@ -1,0 +1,141 @@
+/* Dark Mode */
+body.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+/* Dark Mode Navbar */
+body.dark-mode .navbar-custom {
+    background: linear-gradient(135deg, #1c1c1c, #292929);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Dark Mode Navbar Brand */
+body.dark-mode .navbar-brand {
+    color: #ffcc00 !important;
+}
+
+/* Dark Mode Navbar Links */
+body.dark-mode .nav-link {
+    color: #e0e0e0 !important;
+    transition: color 0.3s ease-in-out;
+}
+
+body.dark-mode .nav-link:hover {
+    color: #ff8800 !important;
+}
+
+/* Dark Mode Navbar Toggler */
+body.dark-mode .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+body.dark-mode .navbar-toggler-icon {
+    filter: brightness(0) invert(1); /* Ensures visibility */
+}
+
+/* Dark Mode Navbar Dropdown */
+body.dark-mode .navbar-collapse {
+    background: #1f1f1f;
+    border-radius: 10px;
+}
+
+/* Dark Mode Toggle Switch */
+body.dark-mode .form-check-input {
+    background-color: #444;
+    border-color: #ffcc00;
+}
+
+body.dark-mode .form-check-input:checked {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+}
+
+
+
+/* 🌙 Global Dark Mode */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #E0E0E0 !important;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* 🖤 About Section - Dark Mode */
+body.dark-mode .about {
+    background: #181818 !important;
+    color: #E0E0E0 !important;
+}
+
+/* 🚀 Skills Section - Dark Mode */
+body.dark-mode .skills-section {
+    background: #1A1A1A !important;
+    color: #F0F0F0 !important;
+}
+
+/* 🔥 Projects Section - Dark Mode */
+body.dark-mode .projects-section {
+    background-color: #121212 !important;
+    color: #E0E0E0 !important;
+}
+
+/* 💌 Contact Section - Dark Mode */
+body.dark-mode .contact-section {
+    background: #181818 !important;
+    color: #E0E0E0 !important;
+}
+
+/* 🎨 Fix Specific Element Colors */
+
+/* 🔹 About Section */
+body.dark-mode .about-container {
+    background: none !important;
+}
+
+/* 🔹 Skills Section */
+body.dark-mode .skill-card {
+    background: #222222 !important;
+    color: #E0E0E0 !important;
+}
+
+/* 🔹 Projects Section */
+body.dark-mode .project-details h3 {
+    color: #F8FAFC !important;
+}
+
+body.dark-mode .project-details p {
+    color: #BBBBBB !important;
+}
+
+/* 🔹 Contact Section */
+body.dark-mode .text-content h2 {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .text-content p {
+    color: #BBBBBB !important;
+}
+
+/* 🔹 Form Background */
+body.dark-mode form {
+    background: #222222 !important;
+    color: #E0E0E0 !important;
+}
+
+/* 🎯 Icons */
+body.dark-mode i, 
+body.dark-mode .social-links a {
+    color: #1E90FF !important; /* Bright Blue */
+}
+
+body.dark-mode .social-links a:hover, 
+body.dark-mode i:hover {
+    color: #FFD700 !important; /* Gold on Hover */
+}
+
+/* ✨ Smooth Transition */
+body.dark-mode * {
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+

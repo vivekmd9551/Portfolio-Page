@@ -1,0 +1,908 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Fixed Navbar */
+.navbar-custom {
+    background: #007bff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 12px 20px;
+}
+
+/* Full-Screen Sections */
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Simple & Elegant Section Colors */
+#section1 { background: #ffffff; color: #333; }  /* Clean White */
+#section2 { background: #b58ef3; color: #333; }  /* Soft Gray */
+#section3 { background: #525151; color: #333; }  /* Light Blue */
+#section4 { background: #fce4ec; color: #333; }  /* Soft Pink */
+#section5 { background: #f7f4f7; color: #333; }  /* Gentle Green */
+
+/* Section Titles */
+.section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 1.4rem;
+    max-width: 600px;
+}
+
+/* Dark Mode Toggle */
+.form-check-input {
+    width: 45px;
+    height: 22px;
+    cursor: pointer;
+    accent-color: #007bff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section h1 {
+        font-size: 2.5rem;
+    }
+    .section p {
+        font-size: 1.2rem;
+        padding: 0 15px;
+    }
+}
+
+
+/* General Navbar Styles */
+.navbar-custom {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 12px 20px;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff !important;
+    transition: color 0.3s;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff !important;
+    transition: color 0.3s ease-in-out;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+/* Navbar Toggle Button */
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1); /* Makes the icon white */
+}
+
+
+/* Hero Section - Full-Screen Image with Text Overlay */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/* About Us Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10%;
+    background-color: #fff;
+    min-height: 100vh; /* Ensures the section takes full height */
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px; /* Adds spacing between image and text */
+}
+
+/* 🖼️ Image (Left Side) */
+.about-container img {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* 📜 Content (Right Side) */
+.about-content {
+    width: 50%;
+    padding: 20px;
+    text-align: justify; /* Fully justified text */
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px; /* Ensures spacing between text and button */
+}
+
+/* 🎯 Resume Button (Below Text) */
+.about-content .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: white;
+    background-color: #1565c0;
+    text-decoration: none;
+}
+
+.about-content .btn:hover {
+    background-color: #0d47a1;
+}
+
+/* 📌 Large Screens (1440px and above) */
+@media (min-width: 1440px) {
+    .about {
+        padding: 80px 12%;
+    }
+
+    .about-container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .about-container img {
+        width: 40%;
+        max-width: 550px;
+    }
+
+    .about-content {
+        width: 55%; /* More text space */
+    }
+
+    .about-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .about-content p {
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+}
+
+/* 🖥️ Medium Screens (1020px - 1460px) */
+@media (max-width: 1460px) and (min-width: 1020px) {
+    .about {
+        padding: 50px 6%;
+    }
+
+    .about-container {
+        flex-direction: row; /* Keeps image left and content right */
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .about-container img {
+        width: 42%;
+        max-width: 450px;
+    }
+
+    .about-content {
+        width: 53%;
+    }
+
+    .about-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-content p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+}
+
+/* 📉 Tablets (Below 1020px) */
+@media (max-width: 1020px) {
+    .about {
+        padding: 40px 5%;
+    }
+
+    .about-container {
+        flex-direction: column; /* Stacks image and text */
+        text-align: center;
+    }
+
+    .about-container img {
+        width: 85%;
+        max-width: 450px;
+    }
+
+    .about-content {
+        width: 100%;
+        padding: 20px;
+        text-align: justify;
+    }
+
+    .about-content h1 {
+        font-size: 2rem;
+    }
+
+    .about-content p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+}
+
+/* 📲 Mobile (Below 768px) */
+@media (max-width: 768px) {
+    .about {
+        padding: 30px 5%;
+    }
+
+    .about-container img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .about-content {
+        width: 100%;
+        padding: 15px;
+        text-align: justify;
+    }
+
+    .about-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .about-content .btn {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+}
+
+/* 📱 Small Mobile Screens (Below 480px) */
+@media (max-width: 480px) {
+    .about {
+        padding: 20px 5%;
+        min-height: auto;
+    }
+
+    .about-container img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about-content {
+        width: 100%;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .about-content h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .about-content p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .about-content .btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+
+/* Skills Section */
+.container {
+    padding: 60px 10%;
+    max-width: 1400px;
+    margin: auto;
+}
+.mb-4 {
+    color: white;
+}
+/* Skill Card Styling */
+.skill-card {
+    background-color: #1a1a1a !important;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px; /* Default size for big screens */
+}
+
+/* Hover Effect */
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Icon Styling */
+.skill-card i {
+    color: #f8d210;
+    font-size: 2rem;
+}
+
+/* Center Align Text */
+.skill-card p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 10px 0 0;
+}
+
+/* Desktop View - Full Size */
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .container {
+        padding: 80px 10%; /* More padding for a balanced look */
+        max-width: 1600px; /* Ensures structure */
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; /* Adds spacing between skill cards */
+    }
+
+    .col-md-3 {
+        flex: 1 1 calc(25% - 20px); /* 4 cards per row */
+        max-width: calc(25% - 20px);
+    }
+
+    .skill-card {
+        min-height: 220px; /* Bigger cards for better readability */
+        padding: 25px; /* Increased padding */
+        font-size: 1.2rem;
+    }
+
+    .skill-card i {
+        font-size: 2rem; /* Larger icons */
+    }
+
+    .skill-card p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .col-md-3 {
+        flex: 1 1 22%;
+        max-width: 22%;
+    }
+
+    .skill-card {
+        min-height: 200px; 
+    }
+}
+
+/* Tablet View - 2 Columns (50% smaller) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 50px 5%;
+    }
+
+    .col-md-3 {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+
+    .skill-card {
+        min-height: 140px; /* Reduced height */
+        padding: 15px; /* Smaller padding */
+    }
+
+    .skill-card i {
+        font-size: 1.5rem;
+    }
+
+    .skill-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Fix for 733px to 1240px - Ensures the skills section stays within bounds */
+@media (min-width: 733px) and (max-width: 1240px) {
+    .container {
+        padding: 50px 5%;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centers content properly */
+        gap: 15px; /* Adds spacing between cards */
+    }
+
+    .col-md-3 {
+        flex: 1 1 calc(33.33% - 15px); /* Distributes cards into 3 columns */
+        max-width: calc(33.33% - 15px);
+    }
+
+    .skill-card {
+        min-height: 160px; /* Adjusted to prevent overflow */
+        padding: 15px;
+    }
+
+    .skill-card i {
+        font-size: 1.6rem;
+    }
+
+    .skill-card p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Mobile View - 2 Columns (50% smaller) */
+@media (max-width: 768px) {
+    .container {
+        padding: 40px 5%;
+    }
+
+    .col-md-3 {
+        flex: 1 1 48%;
+        max-width: 48%;
+    }
+
+    .skill-card {
+        min-height: 120px; /* Further reduced */
+        padding: 10px;
+    }
+
+    .skill-card i {
+        font-size: 1.4rem;
+    }
+
+    .skill-card p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Small Mobile - Full Width (Even Smaller) */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 5%;
+    }
+
+    .col-md-3 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .skill-card {
+        min-height: 100px; /* Further reduced for smallest screens */
+        padding: 8px;
+    }
+
+    .skill-card i {
+        font-size: 1.2rem;
+    }
+
+    .skill-card p {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+/* 🌌 Projects Section */
+.projects-section {
+    padding: 60px 10%;
+    background-color: #070707; /* Deep Dark Blue */
+    color: #E2E8F0; /* Light Grey Text */
+}
+
+/* 🔹 Container */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* 🏗️ Project Card */
+.project-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(135deg, #1E293B, #334155); /* Smooth Gradient */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 48%;
+    min-height: 220px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ✨ Hover Effect */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 212, 255, 0.3);
+}
+
+/* 🖼️ Project Image */
+.project-card img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* 📄 Project Details */
+.project-details {
+    width: 60%;
+    padding-left: 20px;
+}
+
+/* 📌 Title */
+.project-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: #F8FAFC; /* White */
+}
+
+/* 📝 Description */
+.project-details p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #CBD5E1; /* Soft Grey */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limits text to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 🔵 View More Button */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    color: white;
+    background: linear-gradient(90deg, #007BFF, #00D4FF);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* ⚡ Hover Button Effect */
+.btn:hover {
+    background: linear-gradient(90deg, #00D4FF, #007BFF);
+    box-shadow: 0 4px 10px rgba(0, 212, 255, 0.4);
+    transform: scale(1.05);
+}
+
+/* 🖥️ Desktop - Full View */
+/* 🌌 Projects Section - Bigger for 1920x1080 */
+@media (min-width: 1440px) {
+    .projects-section {
+        padding: 100px 12%;
+    }
+
+    .projects-container {
+        gap: 30px; /* More spacing */
+    }
+
+    .project-card {
+        width: 45%; /* Slightly wider */
+        min-height: 280px; /* Bigger cards */
+        padding: 25px;
+        border-radius: 14px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .project-card img {
+        width: 45%;
+        max-height: 240px;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
+    }
+
+    .project-details {
+        width: 55%;
+        padding-left: 25px;
+    }
+
+    .project-details h3 {
+        font-size: 1.8rem; /* Bigger title */
+    }
+
+    .project-details p {
+        font-size: 1.2rem; /* More readable text */
+        -webkit-line-clamp: 4;
+    }
+
+    .btn {
+        font-size: 1.1rem;
+        padding: 12px 18px;
+    }
+}
+
+/* 🖥️ Ultra-Wide Screens (1920x1080 and above) */
+@media (min-width: 1920px) {
+    .projects-section {
+        padding: 120px 15%;
+    }
+
+    .projects-container {
+        gap: 40px; /* More spacing */
+    }
+
+    .project-card {
+        width: 44%;
+        min-height: 320px;
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .project-card img {
+        width: 50%;
+        max-height: 260px;
+        border-radius: 14px;
+        box-shadow: 0 8px 14px rgba(255, 255, 255, 0.2);
+    }
+
+    .project-details {
+        width: 50%;
+        padding-left: 30px;
+    }
+
+    .project-details h3 {
+        font-size: 2rem;
+    }
+
+    .project-details p {
+        font-size: 1.3rem;
+        -webkit-line-clamp: 5;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 14px 22px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .projects-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .project-card {
+        width: 48%;
+    }
+}
+
+/* 📱 Tablet - 1 Project Per Row */
+@media (max-width: 1024px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    .project-card img {
+        width: 100%;
+        max-height: 200px;
+    }
+    .project-details {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .project-details h3 {
+        font-size: 1.3rem;
+    }
+    .project-details p {
+        -webkit-line-clamp: 2;
+        font-size: 0.95rem;
+    }
+}
+
+/* 📱 Mobile - Compact Layout */
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 40px 5%;
+    }
+    .project-card {
+        min-height: 180px;
+        padding: 12px;
+    }
+    .project-card img {
+        max-height: 180px;
+    }
+    .project-details h3 {
+        font-size: 1.2rem;
+    }
+    .project-details p {
+        -webkit-line-clamp: 2;
+        font-size: 0.9rem;
+    }
+}
+
+/* 📱 Small Mobile - Minimalist View */
+@media (max-width: 480px) {
+    .projects-section {
+        padding: 30px 5%;
+    }
+    .project-card {
+        min-height: 150px;
+    }
+    .project-card img {
+        max-height: 150px;
+    }
+    .project-details h3 {
+        font-size: 1.1rem;
+    }
+    .project-details p {
+        -webkit-line-clamp: 1;
+        font-size: 0.85rem;
+    }
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 10%;
+    background: #f8f9fa; /* Light background */
+    color: #333; /* Dark text */
+}
+
+/* Container Alignment */
+.contact-section .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Left Side: Text Content */
+.text-content {
+    max-width: 500px; /* Prevents excessive stretching */
+}
+
+.text-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Social Icons */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    font-size: 2rem;
+    color: #007bff; /* Blue color */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0056b3; /* Darker blue */
+}
+
+/* Right Side: Contact Form */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-section .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    form {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}

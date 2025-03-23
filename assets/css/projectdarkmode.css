@@ -1,0 +1,197 @@
+/* 🌑 Dark Mode Global */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* 🌟 Headings & Paragraphs */
+body.dark-mode h2 {
+    color: #ffffff !important;
+}
+
+body.dark-mode p {
+    color: #bbbbbb !important;
+}
+
+/* 🔹 Project Sections */
+body.dark-mode .project-section {
+    background-color: #1e1e1e; /* Darker background */
+}
+
+/* 🚀 Smart Surveillance System */
+body.dark-mode #project1 {
+    background-color: #1a237e !important; /* Deep Blue */
+}
+
+body.dark-mode #project1 h2 {
+    color: #90caf9 !important;
+}
+
+body.dark-mode #project1 .btn {
+    background-color: #2196f3 !important;
+}
+
+body.dark-mode #project1 .btn:hover {
+    background-color: #1976d2 !important;
+}
+
+/* 🚦 Traffic Sign Detection */
+body.dark-mode #project2 {
+    background-color: #4e342e !important; /* Dark Brown */
+}
+
+body.dark-mode #project2 h2 {
+    color: #ffccbc !important;
+}
+
+body.dark-mode #project2 .btn {
+    background-color: #ff7043 !important;
+}
+
+body.dark-mode #project2 .btn:hover {
+    background-color: #e64a19 !important;
+}
+
+/* 🌍 Disaster Awareness System */
+body.dark-mode #project3 {
+    background-color: #311b92 !important; /* Deep Purple */
+}
+
+body.dark-mode #project3 h2 {
+    color: #b39ddb !important;
+}
+
+body.dark-mode #project3 .btn {
+    background-color: #673ab7 !important;
+}
+
+body.dark-mode #project3 .btn:hover {
+    background-color: #512da8 !important;
+}
+
+/* 🦁 Zoo Management System */
+body.dark-mode #project4 {
+    background-color: #1b5e20 !important; /* Dark Green */
+}
+
+body.dark-mode #project4 h2 {
+    color: #a5d6a7 !important;
+}
+
+body.dark-mode #project4 .btn {
+    background-color: #66bb6a !important;
+}
+
+body.dark-mode #project4 .btn:hover {
+    background-color: #43a047 !important;
+}
+
+/* 🎠 Image Carousel */
+body.dark-mode .project-slider img {
+    border: 2px solid #424242; /* Subtle border for visibility */
+}
+
+/* 🎨 Buttons & Links */
+body.dark-mode .project-links .btn {
+    background-color: #333333 !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .project-links .btn:hover {
+    background-color: #555555 !important;
+}
+
+body.dark-mode .project-links .github {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .project-links .github:hover {
+    color: #90caf9 !important;
+}
+
+/* 🎠 Bootstrap Carousel Controls */
+body.dark-mode .carousel-control-prev, 
+body.dark-mode .carousel-control-next {
+    filter: invert(100%);
+}
+
+/* 📱 Contact Section */
+body.dark-mode .text-content h2 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .text-content p {
+    color: #bbbbbb !important;
+}
+
+/* 📌 Form Styling */
+body.dark-mode form {
+    background: #222222 !important;
+    color: #e0e0e0 !important;
+}
+
+/* 🎯 Social Icons */
+body.dark-mode .social-links a {
+    color: #1e90ff !important;
+}
+
+body.dark-mode .social-links a:hover {
+    color: #ffd700 !important;
+}
+
+/* ✨ Smooth Transition */
+body.dark-mode * {
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* 🔥📱 Responsive Adjustments */
+
+/* 💻 Large Screens (1920px and above) */
+@media screen and (min-width: 1920px) {
+    body.dark-mode h2 {
+        font-size: 3rem;
+    }
+    body.dark-mode p {
+        font-size: 1.5rem;
+    }
+    body.dark-mode .project-container {
+        max-width: 1500px;
+    }
+    body.dark-mode .project-slider {
+        max-width: 750px;
+    }
+    body.dark-mode .project-slider img {
+        height: 450px;
+    }
+}
+
+/* 🖥️ Laptops (1366px - 1600px) */
+@media screen and (max-width: 1600px) {
+    body.dark-mode .project-slider {
+        max-width: 550px;
+    }
+    body.dark-mode .project-slider img {
+        height: 320px;
+    }
+}
+
+/* 📲 Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    body.dark-mode .project-slider img {
+        height: 280px;
+    }
+}
+
+/* 📱 Mobile Screens (Below 768px) */
+@media screen and (max-width: 768px) {
+    body.dark-mode .project-slider img {
+        height: 250px;
+    }
+}
+
+/* 📱 Small Mobile Screens (Below 480px) */
+@media screen and (max-width: 480px) {
+    body.dark-mode .project-slider img {
+        height: 220px;
+    }
+}
