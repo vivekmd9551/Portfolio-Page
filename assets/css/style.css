@@ -511,68 +511,66 @@ body {
 }
 
 
-/* 📱 Mobile View - 2 Columns (Ensures Content Fits) */
+/* 📱 Mobile View - 2 Columns, Smaller Cards */
 @media (max-width: 768px) {
     .container {
-        padding: 40px 5%;
+        padding: 30px 5%;
     }
 
     .row {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px; /* Adds spacing between cards */
+        gap: 10px; /* Reduced gap */
     }
 
     .col-md-3 {
-        flex: 1 1 calc(50% - 15px); /* 2 Columns */
-        max-width: calc(50% - 15px);
+        flex: 1 1 calc(50% - 10px); /* Ensures 2 columns */
+        max-width: calc(50% - 10px);
     }
 
     .skill-card {
-        min-height: 130px; /* Adjusted for better fit */
-        padding: 12px;
+        min-height: 90px; /* Smaller height */
+        padding: 8px; /* Reduced padding */
     }
 
     .skill-card i {
-        font-size: 1.3rem;
+        font-size: 1rem; /* Smaller icon */
     }
 
     .skill-card p {
-        font-size: 0.9rem;
+        font-size: 0.75rem; /* Smaller text */
     }
 }
 
-/* 📲 Small Mobile (Ensuring It Stays Inside Section) */
+/* 📲 Small Mobile (Extra Small Cards) */
 @media (max-width: 480px) {
     .container {
-        padding: 30px 5%;
+        padding: 20px 5%;
     }
 
     .row {
-        gap: 10px; /* Reduces spacing for smaller screens */
+        gap: 5px; /* Minimal gap for compact layout */
     }
 
     .col-md-3 {
-        flex: 1 1 48%; /* 2 Columns */
-        max-width: 48%;
+        flex: 1 1 50%; /* Ensures 2 columns */
+        max-width: 50%;
     }
 
     .skill-card {
-        min-height: 110px; /* Adjusted */
-        padding: 10px;
+        min-height: 75px; /* Further reduced size */
+        padding: 6px;
     }
 
     .skill-card i {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 
     .skill-card p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
-
-
 
 
 /* 🌌 Projects Section */
