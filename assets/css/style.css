@@ -571,6 +571,39 @@ body {
         font-size: 0.7rem;
     }
 }
+/* 📲 iPhone SE to iPhone 14 Pro Max (375px - 430px) - 2 Column Layout */
+@media (min-width: 375px) and (max-width: 430px) {
+    .container {
+        padding: 15px 5%;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px; /* Minimal spacing for compact design */
+    }
+
+    .col-md-3 {
+        flex: 1 1 48%; /* Ensures exactly 2 columns */
+        max-width: 48%;
+    }
+
+    .skill-card {
+        min-height: 60px; /* Even smaller height */
+        padding: 4px;
+        border-radius: 5px; /* Smaller rounded corners */
+    }
+
+    .skill-card i {
+        font-size: 0.75rem; /* Smaller icons */
+    }
+
+    .skill-card p {
+        font-size: 0.6rem; /* Smaller text */
+        text-align: center; /* Keeps text aligned properly */
+    }
+}
 
 
 /* 🌌 Projects Section */
